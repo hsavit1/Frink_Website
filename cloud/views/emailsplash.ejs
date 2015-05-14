@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frink Signup</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="phoneimgs.js"></script>
+  </head>
+  <body style="background:url('background.jpg'),#0f141a;">
+    <div id="mainpanel">
+	<img class="logo" style="height: 80px;margin:25px;" src="logo.png"/>
+	<img class="screenshot" src="screenshot.png"/>
+	<div style="z-index: 1050;position: relative;display:inline-block;vertical-align:top;width:700px;margin-top:10px;text-align: left;">
+	  <div class="innerpanel">
+	    <div style="text-align:left;margin:5px;">
+	      <h1>The Free Drink App</h1>
+	      <p> Frink is a new app that allows people to get a free drink at one of their favorite bars each and every day. </p>
+	    </div>
+	    <div style="margin-top:50px;">
+	        <% if(success){ %>
+			Thank you!
+			<a href="/">
+			  <button> Sign Up Another.</button>
+			</a>
+			<% }else{ %>
+			<form method="POST" class="signup">
+			  <div class="input-group">
+			<input type="email" name="email" class="form-control email-input <%= error==""?"":" emailerror" %>" placeholder="<%= error!=""?error:"Enter your email for early access"%>" aria-describedby="email input">
+			<span class="input-group-btn">
+				  <button class="btn btn-default" type="submit">Try it Free</button>
+			</span>
+			  </div>
+			</form>
+			<% } %>
+	    </div>
+	    <div style="margin-top:50px;>
+			<a onclick="alert('comming soon');">
+			  <img style="height:50px;"
+			   alt="Get it on Google Play"
+			   src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+			</a>
+			<a onclick="alert('comming soon');">
+			  <img style="height:50px;"
+			   alt="Download on the AppStore"
+			   src="appstore.svg" />
+			</a>
+	    </div>
+	  </div>
+	</div>
+    </div>
+    <span class="footer">
+      Frink is a copyrighted trademark. Frink is a subscription service not an alchahol distrubutor. Enjoy responsibly!
+    </span>
+  </body>
+</html>

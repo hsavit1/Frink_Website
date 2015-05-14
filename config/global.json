@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "OnTapSplash": {
+            "applicationId": "uQH7Js922y4t5LXZ7PLVDNOadLr8WympnqbSjXgC", 
+            "masterKey": "ESLn7jwit2TYL8HsKMjeYPqcbsUwsDykqAXxSoiU"
+        }, 
+        "_default": {
+            "link": "OnTapSplash"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.4"
+    }
+}
